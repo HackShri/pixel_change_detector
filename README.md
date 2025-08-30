@@ -60,3 +60,16 @@ A computer vision system that detects pixel-level changes in video streams and a
    # Process frame
    results = pipeline.process_frame(your_frame)
    print(f"Detected numbers: {results['detected_numbers']}")
+ 
+ 
+## Configuration
+   ```bash
+   # Detection sensitivity
+   CHANGE_DETECTION_THRESHOLD = 0.3  # Lower = more sensitive  
+
+   # Number recognition confidence
+   NUMBER_CONFIDENCE_THRESHOLD = 0.8  # Higher = stricter   
+
+   # Camera settings
+   CAMERA_INDEX = 0  # Change for different cameras
+   FPS = 30
