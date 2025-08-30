@@ -50,7 +50,7 @@ A computer vision system that detects pixel-level changes in video streams and a
    ```bash
    python run.py
 
- # Programmatic Usage
+ ### Programmatic Usage
    ```bash
    from src.models.pipeline import PixelChangeDetectionPipeline
 
