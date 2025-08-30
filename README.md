@@ -34,3 +34,29 @@ A computer vision system that detects pixel-level changes in video streams and a
    ```bash
    git clone https://github.com/yourusername/pixel-change-detector.git
    cd pixel-change-detector
+
+2. **Install dependencies**:
+   ```bash
+   pip install -r requirements.txt
+
+3. **Generate training data**:
+   ```bash
+   python generate_synthetic_data.py
+4. **Train the models**:
+   ```bash
+   python train_models.py
+
+5. **Run the application**:
+   ```bash
+   python run.py
+
+ # Programmatic Usage
+   ```bash
+   from src.models.pipeline import PixelChangeDetectionPipeline
+
+   # Initialize
+   pipeline = PixelChangeDetectionPipeline()
+
+   # Process frame
+   results = pipeline.process_frame(your_frame)
+   print(f"Detected numbers: {results['detected_numbers']}")
